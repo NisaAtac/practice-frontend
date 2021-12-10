@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 500px;
+    height: 812px;
+    background-color: hsl(217, 54%, 11%);
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+main {
+    /* width: 80%; when width is set, the element is NOT centered!!! */
+    display: flex;
+    width: 80%; 
+    padding: 1rem;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+}
+#banner-img {
+    opacity: 1;
+    border-radius: 0.6rem;
+    overflow: hidden;
+}
+.container-img {
+    overflow: hidden;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+}
+.overlay {
+    opacity: 0;
+    overflow: hidden;
+    border-radius: 0.6rem;
+    /* transition: .5s ease; */
+    background-color: hsl(178, 100%, 50%);
+}
+#view-image {
+    background-color: hsl(178, 100%, 50%); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    padding: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.container-img:hover {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.container-img:hover .overlay {
+    opacity: 0.5;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.heading {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 20px;
+}
+.heading:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 16px;
+}
+.description {
+    margin-bottom: 1rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+}
+#remaining-day {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+}
+#eth {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+.flex-item img {
+    margin-right: 0.5rem;
+}
+
+.footer {
+    border-top: solid 1px hsl(215, 32%, 27%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1rem;
+}
+.footer img{
+    border: solid 1px hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 30px;
+    margin-right: 1rem;
+}
+.footer span{
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+.footer span:hover {
+    color: hsl(178, 100%, 50%);
+}
+@media screen and (min-width: 800px) {
+    body {
+        min-height: 50px;
+        height: 922px;
+    }
+    main {
+        width: 40%; 
+    }
+    p {
+        font-size: 14px;
+    }
+    #remaining-day {
+        font-size: 14px;
+    }
+    #eth {
+        font-size: 14px;
+    }
+}
